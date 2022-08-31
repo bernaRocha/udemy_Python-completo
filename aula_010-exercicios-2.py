@@ -1,10 +1,19 @@
-hora_atual = float(print("Diga a hora atual?"))
 
-if 0 < hora_atual and hora_atual < 11:
-    print("Bom dia!")
-elif 12 < hora_atual < 17:
-    print("Boa tarde")
-elif 18 < hora_atual < 24:
-    print("Boa noite")
+hora_atual = input("Diga a hora atual (0-23): ")
+
+if hora_atual.isdigit():
+    hora_atual = int(hora_atual)
+
+
+    if  hora_atual < 0 or hora_atual > 23:
+        print("Horário invlálido!")
+    else:
+        if hora_atual <= 11:
+            print('Bom dia!')
+        elif hora_atual <= 17:
+            print('Boa tarde')
+        else:
+            print('Boa noite')
+    
 else:
     print("Horário inválido")
