@@ -1,3 +1,5 @@
+from os import system
+system('clear')
 
 hora_atual = input("Diga a hora atual (0-23): ")
 
