@@ -28,3 +28,17 @@ outra_string_02 = ',,'.join(lista2)
 print(outra_string)    # Estou cansando para palavrão grande
 print(lista2)          # ['Estou', 'cansando', 'para', 'palavrão', 'grande']
 print(outra_string_02) # Estou,,cansando,,para,,palavrão,,grande
+
+#### enumerate
+lista3 = ['Fulano', 'Beltrano', 'Ciclano']
+
+for indice, nome in enumerate(lista3):
+    print(indice, nome)
+'''
+0 Fulano
+1 Beltrano
+2 Ciclano
+'''
+
+enumerada =  enumerate(lista3)
+print(list(enumerada)) # [(0, 'Fulano'), (1, 'Beltrano'), (2, 'Ciclano')]
